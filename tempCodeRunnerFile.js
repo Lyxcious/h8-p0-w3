@@ -1,1 +1,0 @@
-kelompok[j].push(a[i])
