@@ -1,8 +1,10 @@
 function perkalianUnik(arr) {
-    arrMulti = [];
+    var arrMulti = [];
+    var arrMod;
     for (var i = 0; i < arr.length; i++){
         arrMod = arr.filter(function(value, index, arr){return index != i});
-        multiplyTotal = 1;
+        var multiplyTotal = 1;
+        var multiply;
         for (var j = 0; j < arrMod.length; j++){
             multiply = arrMod[j];
             multiplyTotal = multiplyTotal * multiply;

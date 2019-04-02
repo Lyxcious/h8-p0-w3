@@ -2,7 +2,9 @@ function angkaPalindrome(num) {
     function testPalindrome () {
         num = String(num)
         var numR = num.split("").reverse().join("");
-        if (numR == num){
+        numR = Number(numR);
+        num = Number(num);
+        if (numR === num){
             return true;
         } else {
             return false;
@@ -10,11 +12,11 @@ function angkaPalindrome(num) {
     }
     if (testPalindrome() === true) {
         num = Number(num) + 1;
-        while (testPalindrome() == false){
+        while (testPalindrome() === false){
             num = Number(num) + 1;
         }
     } else {
-        while (testPalindrome() == false){
+        while (testPalindrome() === false){
             num = Number(num) + 1;
         }
     }

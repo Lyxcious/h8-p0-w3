@@ -1,7 +1,7 @@
 function tentukanDeretGeometri(arr) {
     function testGeo(bedaFaktor, faktorKaliAwal, faktorKali){
         bedaFaktor = faktorKaliAwal - faktorKali;
-        if (bedaFaktor == 0){
+        if (bedaFaktor === 0){
             return true;
         } else {
             return false;
@@ -9,12 +9,12 @@ function tentukanDeretGeometri(arr) {
     }
     
     var i = 0;
-    bedaFaktor = 0;
-    faktorKaliAwal = 0;
-    faktorKali = 0;
-    while (testGeo(bedaFaktor, faktorKaliAwal, faktorKali) == true && i < arr.length-1){
+    var bedaFaktor = 0;
+    var faktorKaliAwal = 0;
+    var faktorKali = 0;
+    while (testGeo(bedaFaktor, faktorKaliAwal, faktorKali) === true && i < arr.length-1){
         faktorKali = arr[i+1]/arr[i];
-        if (i == 0){
+        if (i === 0){
             faktorKaliAwal = faktorKali;
         } else {
             bedaFaktor = faktorKaliAwal - faktorKali;

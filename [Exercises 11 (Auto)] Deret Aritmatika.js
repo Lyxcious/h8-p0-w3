@@ -1,7 +1,7 @@
 function tentukanDeretAritmatika(arr) {
     function testSelisih(bedaSelisih, bedaSelisihAwal, selisih){
         bedaSelisih = bedaSelisihAwal - selisih;
-        if (bedaSelisih == 0){
+        if (bedaSelisih === 0){
             return true;
         } else {
             return false;
@@ -9,12 +9,12 @@ function tentukanDeretAritmatika(arr) {
     }
     
     var i = 0;
-    bedaSelisih = 0;
-    bedaSelisihAwal = 0;
-    selisih = 0;
-    while (testSelisih(bedaSelisih, bedaSelisihAwal, selisih) == true && i < arr.length-1){
+    var bedaSelisih = 0;
+    var bedaSelisihAwal = 0;
+    var selisih = 0;
+    while (testSelisih(bedaSelisih, bedaSelisihAwal, selisih) === true && i < arr.length-1){
         selisih = Math.abs(arr[i]-arr[i+1]);
-        if (i == 0){
+        if (i === 0){
             bedaSelisihAwal = selisih;
         } else {
             bedaSelisih = bedaSelisihAwal - selisih;

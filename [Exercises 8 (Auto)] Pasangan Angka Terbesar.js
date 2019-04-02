@@ -2,6 +2,7 @@ function pasanganTerbesar(num) {
     num = String(num);
     num = num.split("");
     var pasanganTotal = [];
+    var pasangan;
     for (var i = 0; i < num.length-1; i++){
         pasangan = num.slice(i, i+2).join("");
         pasangan = Number(pasangan);
