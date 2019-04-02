@@ -16,25 +16,25 @@ write your Pseudocode / alogorithm here
 */
 STORE "denda" with value 0;
 
-ASK "Pengendara menggunakan helm? true/false";
+DISPLAY "Pengendara menggunakan helm? true/false";
 SET "helm" with value true or false;
 IF "helm" is false
     ADD "denda" by 1;
 END IF
 
-ASK "Pengendara membawa STNK? true/false";
+DISPLAY "Pengendara membawa STNK? true/false";
 SET "STNK" with value true or false;
 IF "STNK" is false
     ADD "denda" by 1;
 END IF
 
-ASK "Pengendara membawa SIM? true/false";
+DISPLAY "Pengendara membawa SIM? true/false";
 SET "SIM" with value true or false;
 IF "SIM" is false
     ADD "denda" by 1;
 END IF
 
-ASK "Plat nomor masih berlaku? true/false";
+DISPLAY "Plat nomor masih berlaku? true/false";
 SET "plat" with value true or false;
 IF "plat" is false
     ADD "denda" by 1;

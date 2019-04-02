@@ -29,9 +29,9 @@ function findAndReplace(str, character) {
     for (var i = 0; i <= str.length-1; i++){
       if (character == str.charAt(i)){
         count++;
-      } else {}
+      }
     }
-    return count
+    return "Terdapat " + count + " huruf " + character;
   }
 }
 

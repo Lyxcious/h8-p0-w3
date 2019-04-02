@@ -46,6 +46,7 @@ function wordSpreadReduction(str) {
         }
         console.log(huruf)
     }
+    console.log("\n")
 }
 
 wordSpreadReduction("Dimas")
