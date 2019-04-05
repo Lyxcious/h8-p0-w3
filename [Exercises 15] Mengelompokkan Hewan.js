@@ -9,9 +9,15 @@ function groupAnimals(animals) {
             }
         }
     }
-    tampungHuruf = tampungHuruf.filter(function(el) {return el;})
+    var temp =[]
     for (var i = 0; i < tampungHuruf.length; i++){
-        tampungHewan.push([])
+        if (tampungHuruf[i] !== undefined){
+            temp.push(tampungHuruf[i])
+        }
+    }
+    tampungHuruf = temp;
+    for (var i = 0; i < tampungHuruf.length; i++){
+        tampungHewan.push([]);
     }
     for (var i = 0; i < animals.length; i++){
         for (var j = 0; j < tampungHuruf.length; j++){
@@ -28,4 +34,3 @@ function groupAnimals(animals) {
   // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
   // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda', 'kancil'], ['unta'] ]
-
