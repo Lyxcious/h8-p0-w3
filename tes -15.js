@@ -23,9 +23,16 @@ function groupAnimals(animals) {
     return tampungHewan
   }
   
-  // TEST CASES
+//   // TEST CASES
   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
-  // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
-  console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
-  // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda', 'kancil'], ['unta'] ]
+//   // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
+//   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
+//   // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda', 'kancil'], ['unta'] ]
+
+// a = [];
+// a[0]= "a";
+// a[3]= "b";
+// console.log(a)
+// a1 = a.filter(function(el) {return el;})
+// console.log(a1)
 
