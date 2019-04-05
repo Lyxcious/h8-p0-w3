@@ -1,5 +1,5 @@
 function groupAnimals(animals) {
-    animals.sort();
+    animals.sort()
     j = 0;
     kelompok = [[]];
     kelompok[j].push(animals[0]);
@@ -8,7 +8,7 @@ function groupAnimals(animals) {
                 kelompok[j].push(animals[i]);
             } else if (kelompok[j][0][0] !== animals[i][0]){
                 j++;
-                kelompok[j] = [animals[i]];
+                kelompok.push([animals[i]]);
           }
     }
     return kelompok

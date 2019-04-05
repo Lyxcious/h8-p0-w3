@@ -11,13 +11,13 @@ function angkaPalindrome(num) {
         }
     }
     if (testPalindrome() === true) {
-        num = Number(num) + 1;
+        num = num + 1;
         while (testPalindrome() === false){
-            num = Number(num) + 1;
+            num = num + 1;
         }
     } else {
         while (testPalindrome() === false){
-            num = Number(num) + 1;
+            num = num + 1;
         }
     }
     return num;
